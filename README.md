@@ -33,3 +33,18 @@ or
 
 Array.from(new Set([1,2,3,4,1]))
 ```
+
+### 4. Swap variables?
+```
+let a = 10, b = 20;
+// Old way
+let temp = a
+a = b
+b = temp
+
+or
+
+// ES6 Way
+
+[a, b] = [b, a]
+```
