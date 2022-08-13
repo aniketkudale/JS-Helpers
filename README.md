@@ -24,3 +24,12 @@ function getKeyByValue(map, target) {
   }
 }
 ```
+
+### 3. Getting Unique values from an Array?
+```
+[...new Set([1,2,3,4])]
+
+or
+
+Array.from(new Set([1,2,3,4,1]))
+```
