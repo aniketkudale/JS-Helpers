@@ -13,3 +13,14 @@ for (let i = 0; i < items.length; i++) {
   }
 }
 ```
+
+### 2. Getting Key based on Value from Map?
+```
+function getKeyByValue(map, target) {
+  for (let [key, value] of map.entries()) {
+    if (value === target) {
+      return key
+    }
+  }
+}
+```
