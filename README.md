@@ -48,3 +48,12 @@ or
 
 [a, b] = [b, a]
 ```
+
+### 5. Get Map Keys/Values in an Array?
+```
+// Get Map Keys in an Array
+let keys = [...map.keys()]
+
+// Get Map Values in an Array
+let values = [...map.values()]
+```
