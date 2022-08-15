@@ -62,4 +62,7 @@ let values = [...map.values()]
 ```
 // Creates an Array with length 10, of zeros
 new Array(10).fill(0);
+
+// Create an Array of M x N, with values 
+Array.from(Array(M), () => Array(N).fill(0));
 ```
