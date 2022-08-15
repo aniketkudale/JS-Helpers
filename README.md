@@ -57,3 +57,9 @@ let keys = [...map.keys()]
 // Get Map Values in an Array
 let values = [...map.values()]
 ```
+
+### 6. Fill an Array with certain value?
+```
+// Creates an Array with length 10, of zeros
+new Array(10).fill(0);
+```
