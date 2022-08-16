@@ -61,8 +61,17 @@ let values = [...map.values()]
 ### 6. Fill an Array with certain value?
 ```
 // Creates an Array with length 10, of zeros
-new Array(10).fill(0);
+new Array(10).fill(0)
 
 // Create an Array of M x N, with values 
-Array.from(Array(M), () => Array(N).fill(0));
+Array.from(Array(M), () => Array(N).fill(0))
+```
+
+### 7. Remove an Element from an Array?
+```
+let arr = [0, 1, 2, 3, 4, 5]
+
+// removes 1 element from ith index
+arr.splice(2, 1)
+// [ 0, 1, 3, 4, 5 ]
 ```
