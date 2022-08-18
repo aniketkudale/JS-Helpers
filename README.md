@@ -99,7 +99,7 @@ arr.shift() // return 0
 ```
 let arr = [0, 1, 2, 3, 4, 5]
 
-// removes 1st element from array
+// removes last element from array
 arr.pop() // return 5
 
 // Now arr becomes [0, 1, 2, 3, 4]
