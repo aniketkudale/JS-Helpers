@@ -83,3 +83,25 @@ let arr = [0, 1, 2, 3, 4, 5]
 arr.splice(2, 1)
 // [ 0, 1, 3, 4, 5 ]
 ```
+
+### 8. Remove first Element from an array?
+```
+let arr = [0, 1, 2, 3, 4, 5]
+
+// removes 1st element from array
+arr.shift() // return 0
+
+// Now arr becomes [1, 2, 3, 4, 5]
+// [1, 2, 3, 4, 5 ]
+```
+
+### 9. Remove last Element from an array?
+```
+let arr = [0, 1, 2, 3, 4, 5]
+
+// removes 1st element from array
+arr.pop() // return 5
+
+// Now arr becomes [0, 1, 2, 3, 4]
+// [0, 1, 2, 3, 4]
+```
