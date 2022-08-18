@@ -12,6 +12,14 @@ for (let i = 0; i < items.length; i++) {
     map.set(items[i], 1)
   }
 }
+
+or
+
+const counts = new Map();
+for (const num of arr) {
+  const count = counts.get(num);
+  counts.set(num, count ? count + 1 : 1);
+}
 ```
 
 ### 2. Getting Key based on Value from Map?
