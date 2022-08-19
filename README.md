@@ -20,6 +20,14 @@ for (const num of arr) {
   const count = counts.get(num);
   counts.set(num, count ? count + 1 : 1);
 }
+
+or
+
+items.forEach(x => {
+  if (!map.has(x))
+    map.set(x, 0)
+  map.set(x ,map.get(x) + 1)
+})
 ```
 
 ### 2. Getting Key based on Value from Map?
