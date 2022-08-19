@@ -25,7 +25,7 @@ or
 
 items.forEach(x => {
   if (!map.has(x))
-    map.set(x, 0)
+    map.set(x, 1)
   map.set(x ,map.get(x) + 1)
 })
 ```
