@@ -1,5 +1,5 @@
 # JS-Helpers
-Frequently used JavaScript Techniques while solving Data Structures and Algorithms Problems
+Frequently used JavaScript Techniques and Templates while solving Data Structures and Algorithms Problems
 
 
 ### 1. Maintaining a count of item using Map?
@@ -112,4 +112,56 @@ arr.pop() // return 5
 
 // Now arr becomes [0, 1, 2, 3, 4]
 // [0, 1, 2, 3, 4]
+```
+
+### 10. Breath First Search - Tree
+```
+var searchBST = function(root, val) {
+    if (!root) return [];
+ 
+    let Q = [], res = null;
+    
+    Q.push(root);
+    
+    while(Q.length) {
+        let size = Q.length;
+        
+        for(let i=0; i<size; i++) {
+            let node = Q.shift();
+            
+            if (node.left) 
+                Q.push(node.left);
+            
+            if (node.right)
+                Q.push(node.right);
+            
+            if(node.val === val)
+                res = node;
+        }
+    }
+    return res;
+};
+```
+
+### 11. Depth First Search - Tree
+```
+var searchBST = function(root, val) {
+    let res = null;
+    
+    function traverse(node) {
+        if (!node) return;
+        
+        if (node)
+            traverse(node.left);
+        
+        if (node.val == val)
+            res = node;
+        
+        if (node)
+            traverse(node.right);
+    }
+    
+    traverse(root);
+    return res;
+};
 ```
