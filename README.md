@@ -165,3 +165,14 @@ var searchBST = function(root, val) {
     return res;
 };
 ```
+
+### 12. Sort Map Based on Keys and print value
+```
+[...new Map([...map.entries()].sort((a,b) => a[0] - b[0])).values()]
+
+// Get the map by entries [0, 1] => [key, value]
+// Sort it by key i.e a[0] <- this required if values are numerical
+// Create a Map out of it
+// Get the values
+
+```
